@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bitcy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <script src="assets/js/jquery.bitcy-0.5.min.js"></script>
+		<script type="text/javascript">
+
+		var bitcyOptions = {	// Default Options (required)
+			currencyIn 			: 'USD',
+			currencyOut 		: 'BTC',	
+			maxDecimals			: 3,		// 'none' or 1 - 20
+			addSymbol			: 'yes',    // 'yes' or 'no'
+		};
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<h3>Bitcy:</h3>
+
+		$100  = <span class="bitcy" data-amount="100"></span><br />
+
+		£100  = <span class="bitcy" data-amount="100" data-currency-in="GBP" data-currency-out="BTC"></span><br />
+
+		$100 = <span class="bitcy" data-amount="100" data-currency-out="cBTC" data-add-symbol="no"></span> bitcents<br />
+ 
+		£1    = <span class="bitcy" data-amount="1" data-currency-in="GBP" data-currency-out="sBTC" data-max-decimals="none"></span>
+
+	</body>
+</html>
